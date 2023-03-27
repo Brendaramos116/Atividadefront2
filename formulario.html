@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center><h1>Cadastro de Usuário</h1></center>
+    <ul>
+        <li><a href="/index.html">Página Incial</a></li>
+        <li><a href="/tabela.html">Tabelas</a></li>
+        <li><a href="">Fomulários</a></li>
+    </ul>
+      <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome completo" 
+            required><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required><br><br>
+
+            <label for="email">E-mail::</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br><br>
+
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="sexo" name="sexo" value="F">Feminino
+            <input type="radio" id="sexo1" name="sexo" value="M">Masculino<br><br>
+
+            <label for="UF">UF:</label>
+            <select name="UF" id="UF">
+                <option value="Selecione">Selecione</option>
+                <option value="DF">DF</option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+            </select><br><br>
+
+            <label for="cidade">Cidade:</label>
+            <select name="cidade" id="cidade">
+                <option value="">Selecione</option>
+                <option value="ceilandia">Ceilandia</option>
+                <option value="ribeirao preto">Ribeirao Preto</option>
+                <option value="anapolis">Anapolis</option>
+            </select><br><br>
+            
+            <fieldset>
+                <legend>Hobbies</legend>
+                <input type="checkbox" id="m" nome="Hobbies[]" >Música<br>
+                <input type="checkbox" id="f" nome="Hobbies[]">Futebol<br>
+                <input type="checkbox" id="t" nome="Hobbies[]">Teatro<br>
+                <input type="checkbox" id="j" nome="Hobbies[]">Jogos<br>
+                <input type="checkbox" id="c" nome="Hobbies[]">Cozinhar<br>
+                </fieldset><br>
+
+                <label for="observacao">Observação:</label>
+                <textarea  id="obs" name="obs" rows="5" cols="100">
+
+                </textarea><br><br>              
+            
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpar">
+            <input type="submit" value="Voltar">
+      </form>
+</body>
+</html>
